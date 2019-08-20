@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slader AdTech Challenge</title>
+    <style>
+        body>div {
+            border: 1px solid red;
+            display: inline-block;
+            float: left;
+            clear: both;
+            margin-top: 30px;
+            color: black;
+            position: relative;
+            min-width: 100px;
+        }
+
+        body>div::before {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background: #cccccc;
+            border: 1px solid red;
+            border-bottom: 1px solid white;
+        }
+
+        #SLADER-ROS-728x90-Anchor {
+            margin-top: 1000px;
+            /* top: 80vh; */
+            min-height: 90px;
+            /* position: absolute; */
+        }
+
+        #SLADER-ROS-300x250-BTF::before {
+            content: 'SLADER-ROS-300x250-BTF';
+        }
+
+        #SLADER-ROS-728x90-Anchor::before {
+            content: 'SLADER-ROS-728x90-Anchor';
+        }
+    </style>
+    <script src="/bundle.js"></script>
+</head>
+
+<body>
+    <h1>Test Ads</h1>
+    <div id='SLADER-ROS-300x250-BTF'>
+        <script>
+            googletag.cmd.push(function () { googletag.display('SLADER-ROS-300x250-BTF'); })
+        </script>
+    </div>
+    <div id='SLADER-ROS-728x90-Anchor'>
+        <script>
+            googletag.cmd.push(function () { googletag.display('SLADER-ROS-728x90-Anchor'); })
+        </script>
+    </div>
+</body>
+
+</html>
